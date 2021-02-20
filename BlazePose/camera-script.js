@@ -3,7 +3,7 @@ const canvas =  document.getElementById("pose-canvas");
 const ctx = canvas.getContext("2d");
 const video = document.getElementById("pose-video");
 const pose = new Pose({locateFile: (file) => {
-    return `../assets/blaze/${file}`;
+    return `assets/${file}`;
 }});
 const k =1;
 
