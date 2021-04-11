@@ -7,3 +7,7 @@ For Live demo in browser using BlazePose model [click here](https://ashish5096.g
 ### Sample Output Using BlazePose Model
 
 <img src="images/test.png">
+
+### Sample Output Using PoseNet Model
+
+<img src="images/test1.png">
