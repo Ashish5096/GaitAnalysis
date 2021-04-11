@@ -4,6 +4,6 @@ For Live demo in browser using PoseNet model [click here](https://ashish5096.git
 
 For Live demo in browser using BlazePose model [click here](https://ashish5096.github.io/BlazePose/)
 
-## Sample Output Using BlazePose Model
+### Sample Output Using BlazePose Model
 
 <img src="images/test.png">
