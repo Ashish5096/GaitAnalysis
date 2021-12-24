@@ -107,10 +107,22 @@
         <title>Gait Analysis</title>
         <link rel="icon" type="image/png" href="../assets/img/uoh.png">
 
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/control_utils_3d.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+
+
+       
+        
+
+        <!--
         <script src="../assets/blaze/camera_utils.js" crossorigin="anonymous"></script>
         <script src="../assets/blaze/control_utils.js" crossorigin="anonymous"></script>
         <script src="../assets/blaze/drawing_utils.js" crossorigin="anonymous"></script>
         <script src="../assets/blaze/pose.js" crossorigin="anonymous"></script>
+        -->
 
     </head>
     <body>
@@ -186,13 +198,13 @@
                         <th>Left</th>
                         
                     </tr>
-                    
+                    <!--
                     <tr>
                         <td>Foot Angle</td>
                         <td id="fa-angle-R"></td>
                         <td id="fa-angle-L"></td>
                     </tr>
-                    
+                    -->
                     <tr>
                         <td>Knee Angle</td>
                         <td id="k-angle-R"></td>
@@ -210,12 +222,15 @@
                         <td id="hip-angle-R"></td>
                         <td id="hip-angle-L"></td>></td>
                     </tr>
+
+                    
+
                 </table>
 
             </div>
 
             <!--<script src="js/face-api.min.js"></script>-->
-            <script src="camera-script.js"> </script>
+            <script src="video-script.js"> </script>
          
     </body>
 </html>
