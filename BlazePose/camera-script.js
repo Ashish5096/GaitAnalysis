@@ -252,6 +252,7 @@ function onResults(results)
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(results.image, 0, 0, canvas.width, canvas.height);
+    fps_start_time = performance.now();
     //console.log(results)
 
     if(results.poseLandmarks)
@@ -349,6 +350,18 @@ function onResults(results)
             document.getElementById("nsteps").innerHTML=nsteps;
         } 
     }
+
+    time_diff = performance.now() - fps_start_time
+            
+    if(time_diff ==0)
+        fps =0
+    else
+        fps = 1/ time_diff
+                
+    fps_text = "FPS:"+(fps).toFixed(2)
+    ctx.font = "20px Comic Sans MS";
+    ctx.fillStyle = "red";
+    ctx.fillText(fps_text, 10, 40);
     
     drawConnectors(ctx, results.poseLandmarks, POSE_CONNECTIONS,{color: '#00FF00', lineWidth: 4});
     drawLandmarks(ctx, results.poseLandmarks,{color: '#FF0000', lineWidth: 1});
